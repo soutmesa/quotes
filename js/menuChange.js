@@ -1,7 +1,7 @@
 $(document).ready (function () {
   if($(window).width() > 767){
     //alert($(window).width());
-    $('.slider').css('margin-top', '100');
+    $('.navbar').removeClass('navbar-fixed-top');
     $('.navbar').removeClass('on-scroll');
     $(window).scroll (function () {
       var sT = $(this).scrollTop();

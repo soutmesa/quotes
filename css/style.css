@@ -50,7 +50,7 @@ body {
 	.scroll-top-wrapper {
 		display: none !important;
 	}
-	#slider {
+	.slider {
 		margin-top: 90px !important;
 	}
 }

@@ -1,39 +1,39 @@
 <?php include('includes/header.php'); ?>	
 		<!-- START SLIDER -->
 
-		<div class="slider" id="slider">
+		<div class="slider">
 			<div class="container">
-			<div id="about-slider">
-				<div id="carousel-slider" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-				  	<ol class="carousel-indicators visible-xs">
-					    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-slider" data-slide-to="1"></li>
-					    <li data-target="#carousel-slider" data-slide-to="2"></li>
-				  	</ol>
+				<div id="about-slider">
+					<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+					  	<ol class="carousel-indicators visible-xs">
+						    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-slider" data-slide-to="1"></li>
+						    <li data-target="#carousel-slider" data-slide-to="2"></li>
+					  	</ol>
 
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/1.jpg" class="img-responsive" alt=""> 
-					   </div>
-					   <div class="item">
-							<img src="img/2.png" class="img-responsive" alt=""> 
-					   </div> 
-					   <div class="item">
-							<img src="img/3.png" class="img-responsive" alt=""> 
-					   </div> 
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/1.jpg" class="img-responsive" alt=""> 
+						   </div>
+						   <div class="item">
+								<img src="img/2.png" class="img-responsive" alt=""> 
+						   </div> 
+						   <div class="item">
+								<img src="img/3.png" class="img-responsive" alt=""> 
+						   </div> 
+						</div>
+						
+						<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+							<i class="fa fa-angle-left make_slow"></i> 
+						</a>
+						
+						<a class="right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+							<i class="fa fa-angle-right make_slow"></i> 
+						</a>
 					</div>
-					
-					<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
-						<i class="fa fa-angle-left make_slow"></i> 
-					</a>
-					
-					<a class="right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
-						<i class="fa fa-angle-right make_slow"></i> 
-					</a>
 				</div>
 			</div>
-		</div>
 		</div>
 
 		<!-- END SLIDER -->
