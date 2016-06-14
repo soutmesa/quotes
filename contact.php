@@ -1,6 +1,6 @@
 <?php include('includes/header.php'); ?>
 	
-	<div class="container">
+	<div class="container contact">
 		<div class="col-md-6 col-sm-12">
 			<form class="form-horizontal" role="form">
 				<div class="form-group">

@@ -55,6 +55,11 @@ body {
 	}
 }
 
+/*  ============================ contact page ============================= */
+
+.contact {
+	margin-top: 90px;
+}
 
 /*  ============================ Custom Layout ============================= */
 
@@ -68,6 +73,7 @@ body {
 
 .logo {
 	margin-top: -7px;
+	line-height: auto;
 }
 
 .logo-small {
