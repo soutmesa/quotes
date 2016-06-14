@@ -1,7 +1,4 @@
 jQuery(function($) {
-
-	
-	
 	// accordian
 	$('.accordion-toggle').on('click', function(){
 		$(this).closest('.panel-group').children().each(function(){
@@ -13,7 +10,6 @@ jQuery(function($) {
 
 	//Initiat WOW JS
 	new WOW().init();
-
 	// portfolio filter
 	$(window).load(function(){'use strict';
 		var $portfolio_selectors = $('.portfolio-filter >li>a');
@@ -47,9 +43,6 @@ jQuery(function($) {
 			form_status.html('<p class="text-success">' + data.message + '</p>').delay(3000).fadeOut();
 		});
 	});
-
-	
-	
 
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
