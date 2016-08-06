@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   	<head>
+
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +12,17 @@
 		<link href="css/responsive-slider.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link href="css/style.css" rel="stylesheet">	
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.4.6/APlayer.min.css">
+	
   	</head>
   	<body>
   		<!-- START NAVIGATION -->
-		<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav">
-			<div class="container add-padding">
+
+		<header class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav">
+			<nav class="container add-padding">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="sr-only">Toggle Navigation</span>
@@ -34,14 +40,15 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="index.php">home</a></li>
-						<li><a href="#authors">authors</a></li>
-						<li><a href="#topic">topic</a></li>
-						<li><a href="#quotes">quotes</a></li>
-						<li><a href="#picture">pictures</a></li>
+						<li><a href="">about</a></li>
+						<li><a href="">picture</a></li>
+						<li><a href="">quotes</a></li>
+						<li><a href="">music</a></li>
 						<li><a href="contact.php">contact</a></li>
-						<li><a href="#picture">Jobs</a></li>
+						<li><a href="">Others</a></li>
 					</ul>
 				</div>
-			</div>
-		</div>
+			</nav>
+		</header>
+
 		<!-- END NAVIGATION -->

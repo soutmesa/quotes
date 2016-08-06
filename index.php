@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>	
 		<!-- START SLIDER -->
 
-		<div class="slider">
+		<section class="slider">
 			<div class="container">
 				<div id="about-slider">
 					<div id="carousel-slider" class="carousel slide" data-ride="carousel">
@@ -34,13 +34,13 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- END SLIDER -->
 
 		<!-- START SECTION -->
 
-		<div class="content" dir="content">
+		<section class="content" dir="content">
 	      	<div class="container">
 	      		<div class="row">
 	      			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -65,12 +65,23 @@
 					</div>
 	      		</div>
 	      	</div>
-	    </div>
+	    </section>
 		<!-- END SECTION -->
+		<div class="container">
+			<div class="col-md-12">
+				<div class="row">
+					
+					<!-- ... -->
+					<div id="player1" class="aplayer"></div>
+					<!-- ... -->
+					
+				</div>
+			</div>
+		</div>
 
 		<!-- START RECENT POSTS -->
-		<div class="recent-post" id="recent">
-			<div class="posts">
+		<section class="recent-post" id="recent">
+			<article class="posts">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms" align="center">
@@ -84,9 +95,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</article>
 
-			<div class="posts">
+			<article class="posts">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -99,9 +110,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</article>
 
-			<div class="posts">
+			<article class="posts">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms" align="center">
@@ -114,8 +125,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+			</article>
+		</section>
 		<!-- END RECENT POSTS -->
 
 		<?php include('includes/footer.php'); ?>

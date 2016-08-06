@@ -55,7 +55,8 @@ body {
 	}
 }
 
-/*  ============================ contact page ============================= */
+/* http://52.77.121.174:7780/index.html?4184270577_2100581310&1502157046  
+============================ contact page ============================= */
 
 .contact {
 	margin-top: 90px;
@@ -67,7 +68,7 @@ body {
 	background: #CCC !important;
 	transition-duration: 1s !important;
 	opacity: 0.9 !important;
-	transition: 0.5s !important;
+	transition: all 0.4s !important;
 	border: none;
 }
 
@@ -248,6 +249,16 @@ ul.nav li:hover a {
 	margin: 0px;
 	padding: 0px;
 	padding-top: 15px;
+}
+
+.upper-case a{
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.upper-case a:hover {
+	color: #4d0000;
+  	transition: 0.5s;
 }
 
 .scroll-top-wrapper {
