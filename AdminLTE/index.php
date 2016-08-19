@@ -1,3 +1,13 @@
+<?php
+  $_SESSION["success"] = '';
+  if ($_SESSION["success"]) {
+    echo "This var is set so I will print.";
+  }else{
+    echo "home";
+    header("location:http://localhost/quotes/adminLTE/pages/examples/login.html");
+    die();
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
