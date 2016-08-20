@@ -15,7 +15,7 @@ var option = {
     music: {
         title: title,
         author: author,
-        url: test,
+        url: song,
         pic: pic,
         lrc: '[00:00.00]lrc here\n[00:01.00]aplayer'
     }
