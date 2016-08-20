@@ -1,17 +1,18 @@
 <?php 
 
 	include('../config/config.php');
-	$action = $_REQUEST['act'];
-	if ($action == 'get'){
+	$action = isset($_REQUEST["act"]);
+	if ($action == "get"){
 		$email = $_REQUEST['e'];
 		$password = md5($_REQUEST['p']);
 		$sql = "SELECT * FROM tbUsers WHERE email='".$email."' AND password='".$password."'";
 		$result = $conn->query($sql);
 		if ($result->num_rows > 0){
 			echo 'ok';
-			// while($row = $result->fetch_assoc()){
-				
-			// }
+			while($row = $result->fetch_assoc()){
+				session_start();
+				$_SESSION['userId'] = $row['userId'];
+			}
 		}else{
 			echo 'invalid user name and password!!';
 		}
