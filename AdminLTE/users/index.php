@@ -15,11 +15,12 @@
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
       </ol>
+      <br />
+      <span class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add User</span>
     </section>
-
     <!-- Main content -->
     <section class="content">
-      <table class="table table-hover">
+      <table class="table table-hover " id="mytable">
         <thead>
           <tr>
             <th>Id</th>
@@ -33,58 +34,18 @@
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <th>mesa</th>
-            <th>M</th>
-            <th>Admin</th>
-            <th>093494818</th>
-            <th>soutmesa3@gmail.com</th>
-            <th>21/08/2016</th>
-            <th>21/08/2016</th>
-            <th><a href="">Edit</a> | <a href="">Delete</a></th>
-          </tr>
-          <tr>
-            <th>2</th>
-            <th>mesa</th>
-            <th>M</th>
-            <th>Admin</th>
-            <th>093494818</th>
-            <th>soutmesa3@gmail.com</th>
-            <th>21/08/2016</th>
-            <th>21/08/2016</th>
-            <th><a href="">Edit</a> | <a href="">Delete</a></th>
-          </tr>
-          <tr>
-            <th>3</th>
-            <th>mesa</th>
-            <th>M</th>
-            <th>Admin</th>
-            <th>093494818</th>
-            <th>soutmesa3@gmail.com</th>
-            <th>21/08/2016</th>
-            <th>21/08/2016</th>
-            <th><a href="">Edit</a> | <a href="">Delete</a></th>
-          </tr>
-          <tr>
-            <th>4</th>
-            <th>mesa</th>
-            <th>M</th>
-            <th>Admin</th>
-            <th>093494818</th>
-            <th>soutmesa3@gmail.com</th>
-            <th>21/08/2016</th>
-            <th>21/08/2016</th>
-            <th><a href="">Edit</a> | <a href="">Delete</a></th>
-          </tr>
-        </tbody>
+        <tbody></tbody>
       </table>
     </section>
+    <?php 
+      include('form.php');
+    ?>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 <?php
   include('../includes/footer.php');
 ?>
+<script type="text/javascript" src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../plugins/datepicker/bootstrap-datepicker.js"></script>

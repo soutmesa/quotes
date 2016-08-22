@@ -5,7 +5,9 @@
 			$sql = "SELECT * FROM tbUsers ";
 			$result = $conn->query($sql);
 			$users = $result->fetch_assoc();
+			// $datas = json_encode($users);
 			echo json_encode($users);
+			// var_export( $users);
 			break;
 		case 'getone':
 			$id = $_GET['id'];

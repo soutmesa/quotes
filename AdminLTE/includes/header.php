@@ -20,7 +20,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <header class="main-header">
-    <a href="index2.html" class="logo">
+    <a href="http://localhost/quotes/adminLTE" class="logo">
       <span class="logo-mini"><b>A</b>LT</span>
       <span class="logo-lg"><b>Admin</b>QUOTES</span>
     </a>

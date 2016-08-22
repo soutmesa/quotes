@@ -17,7 +17,8 @@
 </script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<script type="text/javascript" src="http://localhost/quotes/adminLTE/plugins/morris/morris.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script> -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 <script type="text/javascript" src="http://localhost/quotes/adminLTE/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 <script type="text/javascript" src="http://localhost/quotes/adminLTE/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
@@ -31,6 +32,5 @@
 <script type="text/javascript" src="http://localhost/quotes/adminLTE/dist/js/app.min.js"></script>
 <script type="text/javascript" src="http://localhost/quotes/adminLTE/dist/js/pages/dashboard.js"></script>
 <script type="text/javascript" src="http://localhost/quotes/adminLTE/dist/js/demo.js"></script>
-<script type="text/javascript" src="http://localhost/quotes/adminLTE/js/app.js"></script>
 </body>
 </html>
