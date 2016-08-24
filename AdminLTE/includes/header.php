@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminQUOTES | Dashboard</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost/quotes/adminLTE/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="http://localhost/quotes/adminLTE/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="http://localhost/quotes/adminLTE/dist/css/skins/_all-skins.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/flat/blue.css">
+  <link rel="stylesheet" href="http://localhost/quotes/adminLTE/plugins/iCheck/flat/blue.css">
   <link rel="stylesheet" href="http://localhost/quotes/adminLTE/plugins/morris/morris.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css">
+  <link rel="stylesheet" href="http://localhost/quotes/adminLTE/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
   <link rel="stylesheet" href="http://localhost/quotes/adminLTE/plugins/datepicker/datepicker3.css">
   <link rel="stylesheet" href="http://localhost/quotes/adminLTE/plugins/daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="http://localhost/quotes/adminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">

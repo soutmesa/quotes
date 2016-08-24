@@ -3,6 +3,9 @@
   include('../includes/header.php');
   include('../includes/aside_left.php');
 ?>
+<style>
+  .datepicker{z-index:15000 !important;}
+</style>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -49,3 +52,9 @@
 <script type="text/javascript" src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="../js/app.js"></script>
 <script type="text/javascript" src="../plugins/datepicker/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+  $('.datepicker').datepicker({
+      format: 'yyyy/mm/dd H:i:s',
+      startDate: '-3d'
+  });
+</script>
