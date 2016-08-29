@@ -40,7 +40,9 @@
 			# code...
 			break;
 		case 'del':
-			# code...
+			$id = $_GET['id'];
+			$sql = "DELETE * FROM tbUsers WHERE userId='".$id."'";
+			$delete = $conn->query($sql);
 			break;
 		default:
 			# code...

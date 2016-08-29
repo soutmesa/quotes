@@ -6,7 +6,7 @@
 	if ($action == "get"){
 		$email = $_REQUEST['e'];
 		$password = md5($_REQUEST['p']);
-		$sql = "SELECT * FROM tbUsers WHERE email='".$email."' AND password='".$password."'";
+		$sql = "SELECT * FROM tbUsers WHERE email='".$email."' AND password='".$password."' AND type='admin'";
 		$result = $conn->query($sql);
 		if ($result->num_rows > 0){
 			echo 'ok';

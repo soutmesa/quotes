@@ -1,3 +1,7 @@
 .datepicker {
 	
 }
+.hasErrors{
+	color: red;
+	font-style: italic;
+}

@@ -7,12 +7,12 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title" id="exampleModalLabel">Add User</h4>
+            <h4 class="modal-title" id="exampleModalLabel" data-title="">Add User</h4>
           </div>
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label class="form-control-label">Name:</label>
+                <label class="form-control-label">Name: <span id="error">Name cannot be blank!!</span></label>
                 <input type="text" class="form-control" id="name-text" name="userName">
               </div>
               <div class="form-group">
@@ -31,7 +31,7 @@
                   <option value="contributor">Contributor</option>
                 </select>
               </div>
-              <label class="form-control-label">Date Of Birth:</label>
+              <label class="form-control-label">Date Of Birth:<span id="error">DOB cannot be blank!!</span></label>
               <div class="input-group date" data-provide="datepicker">
                 <input type="text" data-format="yyyy/MM/dd H:i:s" class="form-control datepicker" name="dob">
                 <div class="input-group-addon">
@@ -39,7 +39,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="form-control-label">Email:</label>
+                <label class="form-control-label">Email:<span id="error">Email cannot be blank!!</span></label>
                 <input type="text" class="form-control" id="email-text" name="email">
               </div>
               <div class="form-group">
@@ -47,11 +47,11 @@
                 <input type="text" class="form-control" id="phone-text" name="phone">
               </div>
               <div class="form-group">
-                <label class="form-control-label">Password:</label>
+                <label class="form-control-label">Password:<span id="error">Password cannot be blank!!</span></label>
                 <input type="password" class="form-control" id="password-text" name="password">
               </div>
               <div class="form-group">
-                <label class="form-control-label">Confirm Password:</label>
+                <label class="form-control-label">Confirm Password:<span id="error">Please re-enter passowrd!!</span></label>
                 <input type="password" class="form-control" id="con-password-text" name="con-password">
               </div>
               <div class="form-group">

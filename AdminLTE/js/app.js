@@ -23,7 +23,7 @@ $('#mytable').ready(function(){
 				table += '<th>' + email + '</th>';
 				table += '<th>' + created + '</th>';
 				table += '<th>' + updated + '</th>';
-				table += '<th><a href="#" data-toggle="modal" data-target="#exampleModal">Edit</a> | <a href="#" data-toggle="modal" data-target="#exampleModal">Delete</a></th>';
+				table += '<th><a href="#" data-toggle="modal" data-target="#exampleModal">Edit</a> | <a href="#" id="delete" data-toggle="modal" data-target="" name="'+id+'">Delete</a></th>';
 				table += '</tr>';
 				$('#mytable > tbody:last-child').append(table);
 			}
@@ -31,12 +31,13 @@ $('#mytable').ready(function(){
 	});
 });
 
-$('body').on('click','#btnSave', function(event){
+$('body').on('click','#insertModal', function(event){
 	event.preventDefault();
 	var ary = $('form').serializeArray();
 	var obj = {};
 	for (var a = 0; a < ary.length; a++) obj[ary[a].name] = ary[a].value;
-	// console.log(obj.userName);
+	$('#exampleModal').dialog('close');
+	console.log(obj.userName);
 	$.ajax({
 		url: "http://localhost/quotes/adminLTE/functions/crud_users.php?act=post",
 		data: obj,
@@ -61,10 +62,16 @@ $('body').on('click','#btnSave', function(event){
 			table += '<th>' + email + '</th>';
 			table += '<th>' + created + '</th>';
 			table += '<th>' + updated + '</th>';
-			table += '<th><a href="#" data-toggle="modal" data-target="#exampleModal">Edit</a> | <a href="#" data-toggle="modal" data-target="#exampleModal">Delete</a></th>';
+			table += '<th><a href="#" data-toggle="modal" data-target="#exampleModal">Edit</a> | <a href="#" id="delete" data-toggle="modal" data-target="#exampleModal" name="'+id+'">Delete</a></th>';
 			table += '</tr>';
 			$('#mytable > tbody:last-child').append(table);
 			$('#exampleModal').modal('hide');
 		}
 	});
+});
+
+$('body').on('click', '#delete', function(event){
+	var id = '';
+	id = $('#delete').attr('name');
+	alert(id);
 });
