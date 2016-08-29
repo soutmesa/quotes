@@ -4,7 +4,12 @@
   include('../includes/aside_left.php');
 ?>
 <style>
-  .datepicker{z-index:15000 !important;}
+  .datepicker{
+    z-index:15000 !important;
+  }
+  #edit, #delete {
+    cursor: pointer;
+  }
 </style>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

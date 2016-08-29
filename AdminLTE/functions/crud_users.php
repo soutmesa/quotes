@@ -41,8 +41,12 @@
 			break;
 		case 'del':
 			$id = $_GET['id'];
-			$sql = "DELETE * FROM tbUsers WHERE userId='".$id."'";
-			$delete = $conn->query($sql);
+			$sql = "DELETE FROM tbUsers WHERE userId='".$id."'";
+			if($conn->query($sql) === TRUE){
+				echo "Deleted";
+			}else{
+				echo "Cannot delete !!!";
+			}
 			break;
 		default:
 			# code...

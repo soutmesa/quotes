@@ -1,7 +1,10 @@
 .datepicker {
-	
+	z-index:15000 !important;
 }
 .hasErrors{
 	color: red;
 	font-style: italic;
+}
+#edit {
+	cursor: pointer;
 }
