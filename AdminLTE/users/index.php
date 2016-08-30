@@ -7,6 +7,18 @@
   .datepicker{
     z-index:15000 !important;
   }
+  .error {
+    border: 1px solid red;
+  }
+  .weak{
+    color:orange;
+  }
+  .good{
+    color:#2D98F3;
+  }
+  .strong{
+    color: limegreen;
+  }
   #edit, #delete {
     cursor: pointer;
   }
