@@ -25,7 +25,7 @@
               <div class="form-group">
                 <label class="form-control-label">Type:</label>
                 <select id="type-text" name="type" class="form-control">
-                  <option value="adim">Admin</option>
+                  <option value="admin">Admin</option>
                   <option value="editor">Editor</option>
                   <option value="author">author</option>
                   <option value="contributor">Contributor</option>
@@ -35,7 +35,7 @@
               <div class="input-group date" data-provide="datepicker">
                 <input type="text" data-format="yyyy/MM/dd H:i:s" class="form-control datepicker" name="dob">
                 <div class="input-group-addon">
-                  <a href="#"><span class="glyphicon glyphicon-th"></span></a>
+                  <a href="#"><span class="glyphicon glyphicon-calendar"></span></a>
                 </div>
               </div>
               <div class="form-group">
@@ -53,14 +53,6 @@
               <div class="form-group">
                 <label class="form-control-label">Confirm Password:</label>
                 <input type="password" class="form-control" id="con-password-text" name="con-password">
-              </div>
-              <div class="form-group">
-                <label class="form-control-label">Languages:</label>
-                <select id="lang-text" name="lang" class="form-control">
-                  <option value="kh">KH</option>
-                  <option value="fr">FR</option>
-                  <option value="en">EN</option>
-                </select>
               </div>
               <div class="form-group">
                 <label class="form-control-label">Address:</label>

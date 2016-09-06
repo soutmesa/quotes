@@ -112,3 +112,31 @@ $('body').on('click', '#delete', function(event){
 		});
 	}
 });
+
+$(document).off('click', '.day').on('click', '.day', function(e){
+	$('.datepicker-dropdown').css('display','none');
+});
+$(document).off('click', '.datepicker').on('click', '.datepicker', function(e){
+	$('.datepicker-dropdown').css('display','block');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -48,6 +48,13 @@
 				echo "Cannot delete !!!";
 			}
 			break;
+		case 'logout':
+			session_destroy();
+			if(!isset($_SESSION['userName'])){
+				echo "loggedout";
+	    		die();
+			}
+			break;
 		default:
 			# code...
 			break;

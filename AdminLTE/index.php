@@ -10,6 +10,9 @@
       <h1>
         Dashboard
         <small>Control panel</small>
+        <?php 
+          echo $_SESSION['type']. ' hello';
+        ?>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
