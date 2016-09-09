@@ -3,8 +3,12 @@ $('#mytable').ready(function(){
 		url: "http://localhost/quotes/adminLTE/functions/crud_users.php?act=getall",
 		dataType: "json",
 		type: "GET",
+		beforeSend: function(){
+			// $('#mytable > tbody:last-child').html('<img src="http://loadinggif.com/images/image-selection/32.gif" class="imgLoad"/>');
+			$('body').addClass('pace-running');
+		},
 		success: function(response){
-			// console.log(response)
+			$('body').removeClass('pace-running');
 			for (var i = 0; i< response.length; i++){
 				var id = response[i].userId;
 				var name = response[i].userName;
