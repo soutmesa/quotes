@@ -40,19 +40,26 @@
 			# code...
 			break;
 		case 'del':
-			$id = $_GET['id'];
-			$sql = "DELETE FROM tbUsers WHERE userId='".$id."'";
-			if($conn->query($sql) === TRUE){
-				echo "Deleted";
-			}else{
-				echo "Cannot delete !!!";
+			$user_id = $_GET['current_id'];
+			$sql = "SELECT type FROM tbUsers WHERE userId='".$user_id."'";
+			$result = $conn->query($sql);
+			if ($result->num_rows > 0){
+				$type = $result->fetch_object()->type;
+				if($type=="admin"){
+					$id = $_GET['id'];
+					$sql = "DELETE FROM tbUsers WHERE userId='".$id."'";
+					if($conn->query($sql) === TRUE){
+						echo "deleted";
+					}
+				}else{
+					echo "permission denied!!!";
+				}
 			}
 			break;
 		case 'logout':
 			session_destroy();
 			if(!isset($_SESSION['userName'])){
-				echo "loggedout";
-	    		die();
+				header('location: http://localhost/quotes/adminLTE/pages/examples/login.html');
 			}
 			break;
 		default:

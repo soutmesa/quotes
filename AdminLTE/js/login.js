@@ -4,6 +4,11 @@ $(function(){
 		$('#errors').text('');
 		var email = $('input[type="email"][name="email"]').val();
 		var password = $('input[type="password"][name="password"]').val();
+		var tmp_remeber = $('input[type="checkbox"]:checked').val();
+		var remember = '';
+		if (tmp_remeber != undefined){
+			remember = tmp_remeber;
+		}
 		var url = 'http://localhost/quotes/adminLTE/functions/session_login.php?act';
 		$('#errors').text('');
 		$('#errors').removeClass('hasErrors');
@@ -21,7 +26,7 @@ $(function(){
 					$('#errors').addClass('hasErrors');
 				}else{
 					$.ajax({
-						url: url + '=get&e='+email+'&p='+password,
+						url: url + '=get&e='+email+'&p='+password + '&rem=' + remember,
 						success: function(response){
 							if (response ==='ok'){
 								window.location = "http://localhost/quotes/adminLTE/index.php";

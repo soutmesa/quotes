@@ -4,7 +4,6 @@ $('#mytable').ready(function(){
 		dataType: "json",
 		type: "GET",
 		beforeSend: function(){
-			// $('#mytable > tbody:last-child').html('<img src="http://loadinggif.com/images/image-selection/32.gif" class="imgLoad"/>');
 			$('body').addClass('pace-running');
 		},
 		success: function(response){
@@ -107,11 +106,18 @@ $('body').on('click','#btnSave', function(event){
 $('body').on('click', '#delete', function(event){
 	event.preventDefault();
 	var id = $(this).attr('value');
+	var current_id = $('.user_infor span:first-child').attr('class');
 	if(confirm('Are you sure')){
 		$.ajax({
-			url: "http://localhost/quotes/adminLTE/functions/crud_users.php?act=del&id="+ id,
+			type: "DELETE",
+			dataType: "html",
+			url: "http://localhost/quotes/adminLTE/functions/crud_users.php?act=del&id="+ id + "&current_id=" + current_id,
 			success: function(response){
-				$('tr.'+id).remove();
+				if(response=="deleted"){
+					$('tr.'+id).remove();
+				}else{
+					alert(response);
+				}
 			}
 		});
 	}

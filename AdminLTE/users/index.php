@@ -224,9 +224,9 @@
               <li class="user-header">
                 <img src="http://localhost/quotes/adminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
-                <p>
-                  <span id="#user_name"><?php echo $_SESSION["userName"]; ?> - Web Developer</span>
-                  <small>Member since Nov. 2012</small>
+                <p class="user_infor">
+                  <span id="#user_name" class="<?php echo $_SESSION['userId']?>"><?php echo $_SESSION["userName"]?></span> - <span id="user_type"><?php echo $_SESSION['type']; ?></span>
+                  <small>Member since <?php echo $_SESSION["created_at"]?></small>
                 </p>
               </li>
               <li class="user-body">

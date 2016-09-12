@@ -14,13 +14,19 @@
 				$_SESSION['userId'] = $row['userId'];
 				$_SESSION['userName'] = $row['userName'];
 				$_SESSION['type'] = $row['type'];
+				$_SESSION['created_at'] = $row['created_at'];
+			}
+			$remember = isset($_REQUEST['rem']);
+			if($remember == "remember"){
+				$month = time() + (60 * 60 * 24 * 30);
+				setcookie('rem', $_SESSION['userName'], $month);
 			}
 		}else{
 			echo 'invalid user name and password!!';
 		}
 	}
-	if (!isset($_SESSION["userName"])) {
+	if (!isset($_SESSION["userName"])){
 	    header("location:http://localhost/quotes/adminLTE/pages/examples/login.html");
 	    die();
-	  }
+	}
 ?>
